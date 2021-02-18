@@ -132,6 +132,39 @@ Precisávamos verificar a cotação de frete disponível para uma venda, e retor
 
 ---
 
+# E o ruby? Tem interface?
+
+```
+class Base
+  attr_readers :width, :height
+
+  def initialize(width:, height:)
+    ...
+  end
+
+  def area
+    raise NotImplementedError.new("precisa ser implementado")
+  end
+end
+
+class Triangle < Base
+end
+
+class Square < Base
+  def area
+    width * width
+  end
+end
+
+class Rectangle < Base
+  def area
+    width * length
+  end
+end
+```
+
+---
+
 # Resumo da ópera
 
 _O Rails é uma mãe!_
