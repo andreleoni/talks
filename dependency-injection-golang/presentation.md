@@ -46,7 +46,7 @@ _Quem faz tudo, não faz nada direito_
 
 # O que é injeção de dependência?
 
-* Padrão de projeto (Não deve era confundido com inversão de dependência);
+* É um padrão de projeto (Não deve era confundido com o princípio de inversão de dependência do solid);
 * O objetivo é dimiunir o acoplamento do código;
 * É declarado via abstrações (interfaces) quais são as dependências requeridas para utilização de determinado modulo, classe ou chamada da função da classe.
 
@@ -57,6 +57,16 @@ _Quem faz tudo, não faz nada direito_
 * Evita alto nível de acoplamento dentro de uma aplicação;
 * Facilidade de manutenção;
 * Permite criação de testes unitários com mock.
+
+---
+
+# Porque os rubystas não se importam com isso?
+
+* Ruby é interpretado e não compilada;
+* Ruby não é uma linguagem tipada;
+* Expects e allows sobescrevem o acesso a classe em tempo de execução;
+* GOlang é uma linguagem fortemente tipada;
+* GOlang é compilado, não é possível sobescrever um metodo em tempo de execução.
 
 ---
 
