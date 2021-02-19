@@ -132,6 +132,10 @@ Precisávamos verificar a cotação de frete disponível para uma venda, e retor
 
 ---
 
+# Na prática
+
+---
+
 # E o ruby? Tem interface?
 
 ```ruby
