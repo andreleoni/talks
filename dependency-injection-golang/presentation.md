@@ -80,7 +80,7 @@ Aqui tem mais detalhes sobre o que a comunidade pensa sobre isso: https://golang
 
 # Sobre Interfaces
 
-```
+```go
 package main
 
 import "fmt"
@@ -134,7 +134,7 @@ Precisávamos verificar a cotação de frete disponível para uma venda, e retor
 
 # E o ruby? Tem interface?
 
-```
+```ruby
 class Base
   attr_readers :width, :height
 
