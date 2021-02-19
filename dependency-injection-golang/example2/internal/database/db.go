@@ -8,22 +8,22 @@ type DatabaseIface interface {
 	Remove(string) error
 }
 
-// DatabaseImpl is the impl to database structure
-type DatabaseImpl struct {
+// databaseImpl is the impl to database structure
+type databaseImpl struct {
 	pg pgconn.PGConnecter // Pode ser a conexão com postgres
 }
 
 // NewDatabase initializes a new database structure
-func NewDatabase(db pgconn.PGConnecter) DatabaseImpl {
-	return DatabaseImpl{db}
+func NewDatabase(db pgconn.PGConnecter) DatabaseIface {
+	return databaseImpl{db}
 }
 
 // Add simulates a exec of database
-func (di DatabaseImpl) Add(data string) error {
+func (di databaseImpl) Add(data string) error {
 	return di.pg.Exec(data)
 }
 
 // Remove simulates a exec of database
-func (di DatabaseImpl) Remove(data string) error {
+func (di databaseImpl) Remove(data string) error {
 	return di.pg.Exec(data)
 }

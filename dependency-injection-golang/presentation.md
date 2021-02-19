@@ -63,7 +63,7 @@ _Quem faz tudo, não faz nada direito_
 # Porque os rubystas não se importam com isso?
 
 * Ruby é interpretado e não compilada;
-* Ruby não é uma linguagem tipada;
+* Ruby é uma linguagem dinamicamente tipada;
 * Expects e allows sobescrevem o acesso a classe em tempo de execução;
 * GOlang é uma linguagem fortemente tipada;
 * GOlang é compilado, não é possível sobescrever um metodo em tempo de execução.
@@ -132,7 +132,7 @@ Precisávamos verificar a cotação de frete disponível para uma venda, e retor
 
 ---
 
-# Na prática
+# Me mostre um exemplo
 
 ---
 
