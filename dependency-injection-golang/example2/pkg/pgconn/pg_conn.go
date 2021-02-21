@@ -2,6 +2,8 @@ package pgconn
 
 import "fmt"
 
+// This package only simluate a external PG connection library
+
 // PGConnecter is the interface for pg conn
 type PGConnecter interface {
 	Exec(query string) error
